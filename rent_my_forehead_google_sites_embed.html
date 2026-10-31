@@ -1,0 +1,205 @@
+<!-- RENT MY FOREHEAD™ | Google Sites embed
+     Replace BOOKING_FORM_URL below with your published Google Form URL.
+     Paste this entire snippet into Google Sites > Insert > Embed > Embed code.
+-->
+<style>
+  #rmf-site {
+    --pink: #ff35cf;
+    --pink2: #ff77df;
+    --black: #080808;
+    --panel: #151218;
+    --line: #382333;
+    --white: #fff;
+    --muted: #c7bdc7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    background: var(--black);
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #2a2029;
+    border-radius: 18px;
+  }
+  #rmf-site * { box-sizing: border-box; }
+  #rmf-site a { color: inherit; }
+  #rmf-site .wrap { max-width: 1040px; margin: auto; padding: 28px 20px 34px; }
+  #rmf-site .topline { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  #rmf-site .brand { font-weight:1000; letter-spacing:-1.5px; font-size:clamp(22px,4vw,34px); }
+  #rmf-site .brand span { color:var(--pink); }
+  #rmf-site .status { border:1px solid var(--pink); color:var(--pink); border-radius:99px; padding:7px 11px; font-size:10px; font-weight:900; letter-spacing:1px; white-space:nowrap; }
+  #rmf-site .hero { padding:52px 0 38px; }
+  #rmf-site .eyebrow { color:var(--pink); font-weight:900; font-size:11px; letter-spacing:2px; text-transform:uppercase; }
+  #rmf-site h1 { font-size:clamp(42px,8vw,82px); line-height:.91; letter-spacing:-4px; margin:15px 0 18px; font-weight:1000; text-transform:uppercase; }
+  #rmf-site h1 em { color:var(--pink); font-style:normal; }
+  #rmf-site .intro { color:var(--muted); font-size:clamp(15px,2vw,19px); line-height:1.55; max-width:650px; }
+  #rmf-site .hero-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; }
+  #rmf-site .btn { display:inline-block; text-decoration:none; padding:14px 19px; border-radius:8px; font-size:13px; font-weight:900; letter-spacing:.3px; text-align:center; }
+  #rmf-site .btn-primary { background:var(--pink); color:#100710; }
+  #rmf-site .btn-secondary { border:1px solid #665061; color:#fff; }
+  #rmf-site .ticker { background:var(--pink); color:#100710; font-weight:1000; text-transform:uppercase; letter-spacing:1px; padding:11px 14px; font-size:11px; text-align:center; }
+  #rmf-site .section { padding:34px 0 8px; }
+  #rmf-site .section-head { display:flex; justify-content:space-between; align-items:end; gap:12px; margin-bottom:16px; }
+  #rmf-site h2 { margin:0; font-size:clamp(23px,4vw,34px); letter-spacing:-1px; text-transform:uppercase; }
+  #rmf-site .section-note { color:var(--muted); font-size:12px; }
+  #rmf-site .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  #rmf-site .card { background:linear-gradient(145deg,#1b151d,#100e12); border:1px solid var(--line); border-radius:13px; padding:18px; min-width:0; }
+  #rmf-site .card-top { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+  #rmf-site .card h3 { margin:0; font-size:16px; line-height:1.25; }
+  #rmf-site .price { color:var(--pink); font-weight:1000; font-size:25px; white-space:nowrap; }
+  #rmf-site .duration { color:var(--muted); font-size:11px; margin-top:7px; }
+  #rmf-site .tag { display:inline-block; margin-top:12px; border:1px solid #51324b; border-radius:99px; padding:5px 8px; color:#f4b6e9; font-size:9px; font-weight:900; text-transform:uppercase; letter-spacing:.8px; }
+  #rmf-site .custom { background:var(--pink); color:#120910; border-radius:14px; padding:23px; display:flex; align-items:center; justify-content:space-between; gap:18px; margin-top:13px; }
+  #rmf-site .custom h3 { margin:0 0 6px; font-size:23px; text-transform:uppercase; }
+  #rmf-site .custom p { margin:0; font-size:13px; line-height:1.45; max-width:540px; }
+  #rmf-site .custom .price { color:#120910; font-size:27px; }
+  #rmf-site .custom .btn { background:#100710; color:#fff; white-space:nowrap; }
+  #rmf-site .steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+  #rmf-site .step { border-top:2px solid var(--pink); padding:13px 10px 8px 0; }
+  #rmf-site .step b { display:block; color:var(--pink); font-size:11px; margin-bottom:8px; letter-spacing:1px; }
+  #rmf-site .step span { font-size:13px; line-height:1.4; color:#eee; }
+  #rmf-site .terms { background:#100e12; border:1px solid var(--line); border-radius:13px; padding:20px; }
+  #rmf-site .terms ul { margin:12px 0 0; padding-left:19px; color:var(--muted); font-size:13px; line-height:1.7; }
+  #rmf-site .footer { border-top:1px solid var(--line); margin-top:32px; padding-top:20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:var(--muted); font-size:11px; }
+  #rmf-site .footer strong { color:var(--pink); }
+  #rmf-site .smallprint { color:#9d929d; font-size:10px; line-height:1.5; margin-top:12px; }
+  @media (max-width:620px) {
+    #rmf-site .wrap { padding:22px 15px 28px; }
+    #rmf-site .hero { padding:39px 0 30px; }
+    #rmf-site h1 { letter-spacing:-2.5px; }
+    #rmf-site .cards { grid-template-columns:1fr; }
+    #rmf-site .steps { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    #rmf-site .custom { align-items:flex-start; flex-direction:column; }
+    #rmf-site .section-head { align-items:flex-start; flex-direction:column; }
+  }
+</style>
+
+<div id="rmf-site">
+  <div class="ticker">Prime real estate. Questionable ownership. Now accepting tenants.</div>
+  <div class="wrap">
+    <div class="topline">
+      <div class="brand">RENT MY <span>FOREHEAD</span>™</div>
+      <div class="status">AD SPACE AVAILABLE</div>
+    </div>
+
+    <header class="hero">
+      <div class="eyebrow">A very serious media company</div>
+      <h1>Your brand.<br>My body.<br><em>Our bad decisions.</em></h1>
+      <p class="intro">I'm employed. I'm earning. Somehow, I'm still broke. So I'm monetising my available assets: forehead, face, bedroom, clothes, workspace and Instagram. Pick your space. Make an offer. Become part of this questionable business decision.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="BOOKING_FORM_URL" target="_blank" rel="noopener">BOOK ADVERTISING SPACE ↗</a>
+        <a class="btn btn-secondary" href="#rmf-inventory">VIEW THE RATE CARD ↓</a>
+      </div>
+    </header>
+
+    <div class="ticker">Human dignity sold separately · Founding tenant rates · Subject to approval</div>
+
+    <section class="section" id="rmf-inventory">
+      <div class="section-head">
+        <h2>Available inventory</h2>
+        <div class="section-note">All prices in INR</div>
+      </div>
+
+      <div class="eyebrow">01 / Physical real estate</div>
+      <div class="cards" style="margin-top:12px">
+        <article class="card">
+          <div class="card-top"><h3>Forehead Billboard</h3><div class="price">₹999</div></div>
+          <div class="duration">Per campaign · Duration agreed before booking</div>
+          <span class="tag">Premium placement</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Face Placement</h3><div class="price">₹999</div></div>
+          <div class="duration">Per campaign · Duration agreed before booking</div>
+          <span class="tag">Front-row real estate</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Bedroom Wall</h3><div class="price">₹699</div></div>
+          <div class="duration">One week</div>
+          <span class="tag">Interior advertising</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>T-Shirt — Front</h3><div class="price">₹499</div></div>
+          <div class="duration">One week</div>
+          <span class="tag">Walking billboard</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>T-Shirt — Back</h3><div class="price">₹499</div></div>
+          <div class="duration">One week</div>
+          <span class="tag">Rear-facing inventory</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Desk / Workspace</h3><div class="price">₹499</div></div>
+          <div class="duration">One week</div>
+          <span class="tag">At-work placement</span>
+        </article>
+      </div>
+
+      <div class="eyebrow" style="margin-top:28px">02 / Instagram real estate</div>
+      <div class="cards" style="margin-top:12px">
+        <article class="card">
+          <div class="card-top"><h3>Instagram Story</h3><div class="price">₹99</div></div>
+          <div class="duration">One Story placement</div>
+          <span class="tag">Quick visibility</span>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Sponsored Reel</h3><div class="price">₹999</div></div>
+          <div class="duration">One sponsored Reel</div>
+          <span class="tag">Custom creative execution</span>
+        </article>
+      </div>
+
+      <div class="custom">
+        <div>
+          <h3>Custom campaigns</h3>
+          <p>Brand takeovers, sponsored activities, unusual integrations and ideas that probably shouldn't work but might.</p>
+          <div class="price">Starting at ₹2,499+</div>
+        </div>
+        <a class="btn" href="BOOKING_FORM_URL" target="_blank" rel="noopener">PITCH YOUR IDEA ↗</a>
+      </div>
+
+      <article class="card" style="margin-top:13px">
+        <div class="card-top"><h3>The 5-Day Takeover</h3><div class="price">₹1,199</div></div>
+        <div class="duration">1 Reel + 5 Stories distributed over 5 days</div>
+        <span class="tag">Bundle offer</span>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>How renting works</h2>
+        <div class="section-note">No brokers. One forehead.</div>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01 / SELECT</b><span>Choose the placement or pitch a custom campaign.</span></div>
+        <div class="step"><b>02 / REQUEST</b><span>Send your brand, creative and preferred dates.</span></div>
+        <div class="step"><b>03 / APPROVAL</b><span>We review the idea, availability and final scope.</span></div>
+        <div class="step"><b>04 / PAY & GO</b><span>Pay the invoice/payment link. Booking is confirmed after payment.</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="BOOKING_FORM_URL" target="_blank" rel="noopener">SUBMIT A BOOKING REQUEST ↗</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Booking conditions</h2></div>
+      <div class="terms">
+        <ul>
+          <li>Every booking is subject to approval, availability and final confirmation of scope.</li>
+          <li>Submitting a request does not reserve a slot. A booking is confirmed only after approval and receipt of payment.</li>
+          <li>Physical placements must use safe, removable materials. No permanent marks, unsafe adhesives or damage.</li>
+          <li>Advertisers must provide approved logos, product details and other required brand assets.</li>
+          <li>We may decline misleading, illegal, unsafe, discriminatory or otherwise unsuitable advertising.</li>
+          <li>Views, reach, engagement, leads and sales are not guaranteed.</li>
+          <li>Paid partnerships and sponsored content will be disclosed where required.</li>
+          <li>Paid-ad usage rights, exclusivity, extended usage and extra edits are not included unless agreed separately in writing.</li>
+          <li>For forehead and face placements, campaign duration and execution details will be agreed before payment.</li>
+        </ul>
+      </div>
+      <p class="smallprint">Prices are introductory rates in INR. Any applicable taxes, additional production costs or separately agreed usage fees will be communicated before payment.</p>
+    </section>
+
+    <footer class="footer">
+      <div><strong>RENT MY FOREHEAD™</strong><br>Your brand. My body. Our bad decisions.</div>
+      <div>Instagram: @rentmyforehead<br>Representative: @kurogen</div>
+    </footer>
+  </div>
+</div>
